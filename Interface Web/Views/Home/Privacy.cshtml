@@ -1,39 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Página secundária de teste";
+    ViewData["Title"] = "Testes automatizados";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Página secundária</h1>
-    <p>Página secundária de teste</p>
+    <h1 class="display-4">Testes automatizados</h1>
+    <span>Coloque seu teste automatizado aqui</span>
+    <textarea id="testes automatizados" spellcheck="false" onkeypress="return handleCR(this ,event)" style="width: 477px; height: 155px;">
 
-    <form class="form-group" method="post" action="https://localhost:7073">
-        <div class="row">
-            <div class="col-sm-4">
-                <input type="text" placeholder="Nome" id="nome" name="nome" class="form-control" />
-                <input type="text" placeholder="Sobrenome" name="sobrenome" id="Sobrenome" class="form-control" />
-                <select id="sexo" name="sexo" class=" form-control">
-                    <option disabled selected>Sexo</option>
-                    <option value="M">M</option>
-                    <option value="F">F</option>
-                </select>
-                <input type="text" placeholder="Telefone" id="Telefone" name="Telefone" class="form-control" />
-            </div>
-
-            <div class="col-sm-4">
-                <input type="text" placeholder="CPF" id="CPF" name="CPF" class="form-control" />
-                <input type="text" placeholder="CEP" id="CEP" name="CEP" class="form-control" />
-                <input type="text" placeholder="Endereço" id="Endereco" name="Endereco" class="form-control" />
-                <input type="text" placeholder="Cidade" id="Cidade" name="Cidade" class="form-control" />
-
-            </div>
-            <div class="col-sm-4">
-                <input type="text" placeholder="Cargo" id="Cargo" name="Cargo" class="form-control" />
-                <input type="text" placeholder="Nome da mãe" id="nomeMae" name="nomeMae" class="form-control" />
-            </div>
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-info" value="Enviar" style="float:left" id="btnEnviar" />
-        </div>
-    </form>
+    </textarea>
+    <div class="output" id=" saída testes automatizados"/>
+    <button type="button" class="c-button" onclick="evaluateClear('testes automatizados')">
+        Executar
+    </button>
 </div>
-

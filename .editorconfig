@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0414: O campo "UntitledTestCase.baseURL" é atribuído, mas seu valor nunca é usado
+dotnet_diagnostic.CS0414.severity = none
